@@ -95,10 +95,10 @@ function App() {
         <div className="personal-info">
     <h3>Personal Information</h3>
     <ul>
-      <li><span>Name:</span> John Doe</li>
-      <li><span>Email:</span> john.doe@example.com</li>
-      <li><span>Phone:</span> 123-456-7890</li>
-      <li><span>Location:</span> New York, NY</li>
+      <li><span>Name:</span> Giorgi Didberidze</li>
+      <li><span>Email:</span> gigididberidze01@gmail.com</li>
+      <li><span>Phone:</span> +36-70-319-3039</li>
+      <li><span>Location:</span> Budapest, Hungary</li>
     </ul>
   </div>
   <div className="skills">
