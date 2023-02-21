@@ -3,6 +3,9 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import profilePic from './Giorgi-Didberidze.jpg';
 // import cvFile from '../public/Resume-Giorgi Didberidze.pdf';
 // import Timeline from './Timeline';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
 
 
 
@@ -115,7 +118,118 @@ function App() {
   </button>
   </div>
       </section>
-      <section id = "resume"></section>
+      <section id = "resume" className="resume">
+        <h2 id="resh2">Resume</h2>
+        <VerticalTimeline lineColor="#333">
+        <h2>Work Experience</h2>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        date="10/2022 - Present"
+        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        icon={<FaBriefcase />}
+        >
+        <h3 className="vertical-timeline-element-title">Co-Founder and Website Developer</h3>
+        <h4 className="vertical-timeline-element-subtitle">Bliss Travel Georgia</h4>
+        <p>
+          Created <a id="bliss" href="https://blisstravelgeorgia.com/" target="_blank" rel="noreferrer">www.blisstravelgeorgia.com</a> website. Currently, I am working on SEO improvement and business communications.
+        </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        date="09/2022 - Present"
+        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        icon={<FaBriefcase />}
+        >
+        <h3 className="vertical-timeline-element-title">Data Analytics Mentor</h3>
+        <h4 className="vertical-timeline-element-subtitle">TalentLabs</h4>
+
+        <p>
+        Modules I am currently guiding: Introduction to Data Analytics, Statistics for Data Analysts, Data Analytics with Python, Hands-on Data Analytics Project, Predictive Analytics Essentials, ETL and Data Warehouse
+        </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        date="07/2021 - 11/2022"
+        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        icon={<FaBriefcase />}
+        >
+        <h3 className="vertical-timeline-element-title">Student Software Developer</h3>
+        <h4 className="vertical-timeline-element-subtitle">Ericsson</h4>
+        <p>
+        Name of department: BDGS RDPS AT Technology & Innovation Tasks: 5G UPF, Compilation of PCG/PCC, Data Analytics (UT/FT), Application performance analysis/improvement,Testing Automation, RISC-V ISA inspection, Working with time-series databases (InfluxDB). Languages used: Python, C, C++
+        </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        date="06/2022 - 09/22"
+        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        icon={<FaBriefcase />}
+        >
+        <h3 className="vertical-timeline-element-title">WBS</h3>
+        <h4 className="vertical-timeline-element-subtitle">NLP Researcher</h4>
+        <p>
+        Conducting AI research in Natural Language Processing about open text generation and Q&A models.
+        </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        date="06/2021 - 03/2022"
+        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        icon={<FaBriefcase />}
+        >
+        <h3 className="vertical-timeline-element-title">Python Coding Instructor</h3>
+        <h4 className="vertical-timeline-element-subtitle">TalentLabs</h4>
+
+        <p>
+        Teaching Introduction to Python course (Theoretical and Practical parts)
+        </p>
+        </VerticalTimelineElement>
+        <h2>Education</h2>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        date="09/2022 - Present"
+        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        icon={<FaGraduationCap />}
+        >
+        <h3 className="vertical-timeline-element-title">Computer Science MSc</h3>
+        <h4 className="vertical-timeline-element-subtitle">Eötvös Loránd University</h4>
+
+        <p>
+        Data Science Specialization<br></br>
+        Full Scholarship Holder – Stipendium Hungaricum 2022/2023
+        </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        date="09/2019 - 06/2022"
+        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        icon={<FaGraduationCap />}
+        >
+        <h3 className="vertical-timeline-element-title">Computer Science BSc</h3>
+        <h4 className="vertical-timeline-element-subtitle">University of Debrecen</h4>
+
+        <p>
+        Final grade: 4.23/5<br></br>
+        Thesis: Discovering technical properties and software-economy readiness of RISC-V architecture<br></br>
+        Full Scholarship Holder – Stipendium Hungaricum 2019/2020
+        </p>
+        </VerticalTimelineElement>
+        </VerticalTimeline>
+      </section>
       <section id = "services"></section>
       <section id = "contact"></section>
       </div>
