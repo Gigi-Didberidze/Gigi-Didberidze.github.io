@@ -6,8 +6,38 @@ import profilePic from './Giorgi-Didberidze.jpg';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
+import Services from './Services';
+import Contact from './Contact';
 
-
+function Footer() {
+  return (
+    <footer>
+      <div className="social-links">
+            <a
+              href="https://www.linkedin.com/in/giorgi-didberidze/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com/Gigi-Didberidze"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.instagram.com/gigididberidze/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+          </div>
+    </footer>
+  );
+}
 
 function App() {
   const onButtonClick = () => {
@@ -56,31 +86,7 @@ function App() {
             <h2>Software Engineer</h2>
           </div>
         </main>
-        <footer>
-          <div className="social-links">
-            <a
-              href="https://www.linkedin.com/in/giorgi-didberidze/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://github.com/Gigi-Didberidze"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://www.instagram.com/gigididberidze/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram />
-            </a>
-          </div>
-        </footer>
+        <Footer />
       </div>
       </section>
       <section id="about" className="about">
@@ -230,8 +236,15 @@ function App() {
         </VerticalTimelineElement>
         </VerticalTimeline>
       </section>
-      <section id = "services"></section>
-      <section id = "contact"></section>
+      <section id = "services">
+        <Services />
+      </section>
+      <section id = "contact">
+      <div>
+      <Contact />
+      <Footer />
+      </div>
+      </section>
       </div>
     </body>
   );
