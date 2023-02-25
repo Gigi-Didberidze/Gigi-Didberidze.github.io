@@ -1,5 +1,4 @@
 import React from 'react';
-// import {useState} from 'react';
 import "./App.css";
 import Navbar from './Components/Navbar/Navbar';
 import Services from './Components/Services/Services';
@@ -10,9 +9,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
 import { FaArrowDown } from 'react-icons/fa';
-// import {FaArrowCircleUp} from 'react-icons/fa';
-// import { Button } from './Styles';
-
+import ScrollButton from './Components/ScrollToTop/ScrollButton';
 
 
 function Footer() {
@@ -61,34 +58,10 @@ function App() {
     })
 }
 
-
-// const [visible, setVisible] = useState(false)
-  
-  // const toggleVisible = () => {
-  //   const scrolled = document.documentElement.scrollTop;
-  //   if (scrolled > 300){
-  //     setVisible(true)
-  //   } 
-  //   else if (scrolled <= 300){
-  //     setVisible(false)
-  //   }
-  // };
-  
-  // const scrollToTop = () =>{
-  //   window.scrollTo({
-  //     top: 0, 
-  //     behavior: 'smooth'
-  //   });
-  // };
-  
-  // window.addEventListener('scroll', toggleVisible);
   return (
     <body>
-      {/* <Button>
-     <FaArrowCircleUp onClick={scrollToTop} 
-     style={{display: visible ? 'inline' : 'none'}} />
-      </Button> */}
       <header>
+        <ScrollButton />
       <Navbar />
       
       </header>
