@@ -30,27 +30,41 @@
     color: #fff;
 }
 .service{
-    padding: 68px 0;
+    padding: 10px 0;
 }
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+
 .service-icon{
     color: #fff;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .txt_one{
         font-size: 30px;
     }
     .services-container{
         padding: 80px 0;
+        width:70%;
     }
-    .service{
-        padding: 50px 0;
+  }
+
+  @media (min-width: 769px) and (max-width:980px) {
+    .services-container{
+        padding: 80px 0;
+        width:90%;
     }
   }
 
 .service p{
     font-size: 20px;
     color: #fff;
+    /* text-align: left; */
 }
 
 .service-icon{
@@ -60,3 +74,6 @@
     color: #fff;
 }
 
+.slick-dots{
+    bottom: -10px;
+}
