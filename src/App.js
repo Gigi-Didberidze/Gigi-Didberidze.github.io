@@ -219,6 +219,11 @@ function App() {
         Teaching Introduction to Python course (Theoretical and Practical parts)
         </p>
         </VerticalTimelineElement>
+        </VerticalTimeline>
+      </section>
+      <section id = "education" className="education">
+        <h2>Education</h2>
+        <VerticalTimeline lineColor='#333'>
         <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}

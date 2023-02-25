@@ -85,11 +85,11 @@ section#Main {
 .about {
   padding: 50px 0;
 }
-.experience{
+.experience, .education{
   padding: 50px 0;
   background-color: #F5F5F5	;
 }
-.experience h2{
+.experience h2, .education h2{
   text-align: center;
   font-size: 36px;
   font-weight: bold;
@@ -133,6 +133,11 @@ section#Main {
   }
   .experience{
     padding: 80px 0;
+  }
+}
+@media (max-width: 1168px){
+  .vertical-timeline-element-content .vertical-timeline-element-date{
+    color: #fff;
   }
 }
 
@@ -240,7 +245,7 @@ section#Main {
   color: white;
 }
 #bliss:hover{
-  color: #15C39A;
+  color: #333;
 }
 .vertical-timeline.vertical-timeline--animate.vertical-timeline--two-columns{
   position: relative;
