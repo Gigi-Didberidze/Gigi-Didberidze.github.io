@@ -49,7 +49,7 @@ function Contact() {
               <input
                 type="text"
                 name="name"
-                placeholder="name"
+                placeholder="Name"
                 className="form-control"
                 value={formData.name}
                 onChange={handleChange}
@@ -58,7 +58,7 @@ function Contact() {
               <input
                 type="email"
                 name="email"
-                placeholder="email"
+                placeholder="Email"
                 className="form-control"
                 value={formData.email}
                 onChange={handleChange}
@@ -67,15 +67,15 @@ function Contact() {
               <textarea
                 name="message"
                 rows="5"
-                placeholder="message"
+                placeholder="Message"
                 className="form-control"
                 value={formData.message}
                 onChange={handleChange}
                 required
               ></textarea>
             </div>
-            <button type="submit" className="submit-btn btn">
-              submit here
+            <button type="submit" className="download">
+              Submit
             </button>
           </form>
         </article>

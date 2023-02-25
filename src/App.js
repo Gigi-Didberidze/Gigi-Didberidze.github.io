@@ -1,13 +1,19 @@
+import React from 'react';
+// import {useState} from 'react';
 import "./App.css";
+import Navbar from './Components/Navbar/Navbar';
+import Services from './Components/Services/Services';
+import Contact from './Components/Contact/Contact';
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import profilePic from './Giorgi-Didberidze.jpg';
-// import cvFile from '../public/Resume-Giorgi Didberidze.pdf';
-// import Timeline from './Timeline';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
-import Services from './Services';
-import Contact from './Contact';
+import { FaArrowDown } from 'react-icons/fa';
+// import {FaArrowCircleUp} from 'react-icons/fa';
+// import { Button } from './Styles';
+
+
 
 function Footer() {
   return (
@@ -54,36 +60,46 @@ function App() {
         })
     })
 }
+
+
+// const [visible, setVisible] = useState(false)
+  
+  // const toggleVisible = () => {
+  //   const scrolled = document.documentElement.scrollTop;
+  //   if (scrolled > 300){
+  //     setVisible(true)
+  //   } 
+  //   else if (scrolled <= 300){
+  //     setVisible(false)
+  //   }
+  // };
+  
+  // const scrollToTop = () =>{
+  //   window.scrollTo({
+  //     top: 0, 
+  //     behavior: 'smooth'
+  //   });
+  // };
+  
+  // window.addEventListener('scroll', toggleVisible);
   return (
     <body>
+      {/* <Button>
+     <FaArrowCircleUp onClick={scrollToTop} 
+     style={{display: visible ? 'inline' : 'none'}} />
+      </Button> */}
       <header>
-      <nav>
-          <ul>
-          <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#resume">Resume</a>
-            </li>
-            <li>
-              <a href="#services">Services</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <Navbar />
+      
       </header>
       <div id="main">
       <section id="home">
       <div className="App">
         <main>
           <div className="intro">
-            <h1>Hi, I'm Giorgi</h1>
+            <h1>Hi, I'm <span>Giorgi</span></h1>
             <h2>Software Engineer</h2>
+            <a href="#about" class="button">About Me <FaArrowDown /></a>
           </div>
         </main>
         <Footer />
@@ -94,7 +110,7 @@ function App() {
           <img src={profilePic} alt="Profile" className="about-img"/>
           <div className="about-text">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus.</p>
+            <p>Hello, my name is Giorgi, but most people call me Gigi. I am a Computer Science MSc student at Eötvös Loránd University, Hungary and hold a BSc degree in Computer Science from the University of Debrecen, Hungary. Alongside my studies, I work as a data analytics mentor. In my free time, I enjoy playing snooker and practicing my guitar skills.</p>
           </div>
         </div>
         <div className="center">
@@ -110,24 +126,27 @@ function App() {
   <div className="skills">
     <h3>Skills</h3>
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node.js</li>
+      <li>Web Development</li>
+      <li>Data Analytics</li>
+      <li>Database Systems (SQL/NoSQL)</li>
+      <li>Automation Engineering</li>
+      <li>Data Science and Machine Learning</li>
+      <li>Natural Language Processing</li>
+      <li>Networking (CCNA)</li>
     </ul>
   </div>
   </div>
+  
   <div className="button_download">
+  <p>For more information, please refer to my resume.</p>
   <button class="download" onClick={onButtonClick}>
                     Download CV
   </button>
   </div>
       </section>
-      <section id = "resume" className="resume">
-        <h2 id="resh2">Resume</h2>
+      <section id = "experience" className="experience">
+        <h2>Experience</h2>
         <VerticalTimeline lineColor="#333">
-        <h2>Work Experience</h2>
         <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -200,7 +219,6 @@ function App() {
         Teaching Introduction to Python course (Theoretical and Practical parts)
         </p>
         </VerticalTimelineElement>
-        <h2>Education</h2>
         <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}

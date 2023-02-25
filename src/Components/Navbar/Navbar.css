@@ -1,0 +1,135 @@
+/* Navbar CSS */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.logo:hover{
+  color: lightblue;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 1.5rem;
+}
+
+nav a {
+  display: block;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a:not(.logo, .mobile-menu-items a)::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav a:not(.logo, .mobile-menu-items a):hover::before{
+  background-color: #15C39A;
+}
+
+.github {
+  font-weight: 400;
+  color: #15C39A;
+  font-size: 1.3rem;
+}
+
+
+/* Mobile Menu CSS */
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  height: 50px;
+  padding: 0 20px;
+}
+
+.mobile-menu-icon {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mobile-menu-items {
+  display: none;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 20px;
+  z-index: 1;
+}
+
+.mobile-menu-items ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu-items li {
+  margin-bottom: 10px;
+}
+
+.mobile-menu-items a {
+  color: #fff;
+  text-decoration: none;
+  padding-right: 75px;
+}
+.mobile-menu-items a:hover{
+  color:#15C39A;
+}
+
+/* Media Queries */
+@media (max-width: 860px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .mobile-menu-items {
+    display: none;
+  }
+  .show-menu .mobile-menu-items {
+    display: block;
+  }
+}
+
+.mobile-menu-items.show {
+  display: block;
+}
