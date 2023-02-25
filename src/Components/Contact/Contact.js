@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import emailjs from "emailjs-com";
 import './Contact.css';
+import logopic from './logo-color.png';
+
 
 
 function Contact() {
@@ -43,6 +45,7 @@ function Contact() {
     return (
       <section className="contact-page">
         <article className="contact-form">
+          <img src={logopic} alt="logo" className="logo-img"/>
           <h3>Get in touch</h3>
           <form onSubmit={handleSubmit}>
             <div className="form-group">

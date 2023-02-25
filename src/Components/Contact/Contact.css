@@ -4,22 +4,17 @@
     align-items: center;
     min-height: 80vh;
     background-color: #f8f8f8;
-    padding: 10px 0;
+    padding: 60px 0 10px 0;
   }
   
   .contact-form {
-    /* background-color: #ffffff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 80%;
-    max-width: 600px; */
     text-align: center;
   }
   
   .contact-form h3 {
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 60px;
+    margin: 10px 0 10px 0;
     text-align: center;
   }
   
@@ -27,38 +22,17 @@
     margin-bottom: 20px;
   }
   
-  /* .form-control {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  } */
-  
   textarea.form-control {
     resize: none;
   }
   
-  /* .submit-btn {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  } */
-  
-  /* .submit-btn:hover {
-    background-color: #555;
-  }
-   */
   form input, form textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: none;
     margin-bottom: 20px;
+    font-family: BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   }
   
   form button {
@@ -70,6 +44,7 @@
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   }
 
 @media (max-width: 600px) {
@@ -77,4 +52,11 @@
   form input, form textarea {
     width: 80%;
   }
+}
+.logo-img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
