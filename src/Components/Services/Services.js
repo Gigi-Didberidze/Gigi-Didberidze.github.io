@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { FaDesktop, FaMobileAlt, FaDatabase } from 'react-icons/fa';
+import {FaDesktop, FaChartBar, FaWrench, FaBrain} from 'react-icons/fa'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './Services.css';
@@ -37,17 +37,17 @@ const Services = () => {
             <p>I offer full-stack development services for web and mobile apps. With expertise in front-end and back-end development and latest technologies, I create responsive and scalable end-to-end solutions.</p>
           </div>
           <div className="service">
-            <FaMobileAlt className="service-icon" />
+            <FaChartBar className="service-icon" />
             <h3>Data Analysis / Engineering</h3>
             <p>I offer Data Analysis/Engineering services to help individuals and businesses extract insights from their data. Whether you need to clean, transform, analyze, or visualize your data, I can help you make better decisions and gain a competitive edge. </p>
           </div>
           <div className="service">
-            <FaDatabase className="service-icon" />
+            <FaWrench className="service-icon" />
             <h3>Automation Engineering</h3>
             <p>I create custom automation solutions to streamline workflows & boost productivity. From repetitive tasks to complex workflows, I leverage my programming & automation expertise to fit your needs.</p>
           </div>
           <div className="service">
-            <FaDatabase className="service-icon" />
+            <FaBrain className="service-icon" />
             <h3>NLP and AI<br></br>Solutions</h3>
             <p>My AI/NLP services leverage natural language processing and artificial intelligence tech to extract insights and automate processes for businesses. I build custom chatbots, perform sentiment analysis, extract key info from data and more.</p>
           </div>
