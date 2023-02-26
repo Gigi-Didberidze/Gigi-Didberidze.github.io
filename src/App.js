@@ -45,14 +45,14 @@ function Footer() {
 function App() {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch('Resume-Giorgi Didberidze.pdf').then(response => {
+    fetch('Resume - Giorgi Didberidze.pdf').then(response => {
         response.blob().then(blob => {
             // Creating new object of PDF file
             const fileURL = window.URL.createObjectURL(blob);
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = 'Resume-Giorgi Didberidze.pdf';
+            alink.download = 'Resume - Giorgi Didberidze.pdf';
             alink.click();
         })
     })
