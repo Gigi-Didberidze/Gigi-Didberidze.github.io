@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.47a8ba7a.css",
-    "main.js": "/static/js/main.0cb8eabe.js",
+    "main.js": "/static/js/main.fbf8fbe7.js",
     "static/media/Giorgi-Didberidze.jpg": "/static/media/Giorgi-Didberidze.d2fecc9485fe30649cc9.jpg",
     "static/media/bg.jpg": "/static/media/bg.ff802ca531e9bec4674d.jpg",
     "static/media/logo-color.png": "/static/media/logo-color.1605a70e10973feaac88.png",
@@ -11,10 +11,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.47a8ba7a.css.map": "/static/css/main.47a8ba7a.css.map",
-    "main.0cb8eabe.js.map": "/static/js/main.0cb8eabe.js.map"
+    "main.fbf8fbe7.js.map": "/static/js/main.fbf8fbe7.js.map"
   },
   "entrypoints": [
     "static/css/main.47a8ba7a.css",
-    "static/js/main.0cb8eabe.js"
+    "static/js/main.fbf8fbe7.js"
   ]
 }
