@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <div>
       <nav>
-        <a className="logo" href="#home">gigi-didberidze<span className="github">.github.io</span></a>
+        <a className="logo" href="#home">giorgi<span className="github">.me</span></a>
         {isMobile && (
           <div className="mobile-menu">
             <HamburgerMenu
