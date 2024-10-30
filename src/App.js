@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Services from './Components/Services/Services';
 import Contact from './Components/Contact/Contact';
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import profilePic from './Giorgi-Didberidze.jpg';
+import profilePic from './gigi1.png';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
@@ -71,7 +71,7 @@ function App() {
         <main>
           <div className="intro">
             <h1>Hi, I'm <span>Giorgi</span></h1>
-            <h2>Software Engineer</h2>
+            <h2>Data Scientist</h2>
             <a href="#about" class="button">About Me <FaArrowDown /></a>
           </div>
         </main>
@@ -83,7 +83,7 @@ function App() {
           <img src={profilePic} alt="Profile" className="about-img"/>
           <div className="about-text">
             <h2>About Me</h2>
-            <p>Hello, my name is Giorgi, but most people call me Gigi. I am a Computer Science MSc student at Eötvös Loránd University, Hungary and hold a BSc degree in Computer Science from the University of Debrecen, Hungary. Alongside my studies, I work as a data analytics mentor. In my free time, I enjoy playing snooker and practicing my guitar skills.</p>
+            <p>Hello, my name is Giorgi, but most people call me Gigi. I hold a Computer Science MSc degree with the specialization in data science at Eötvös Loránd University, Hungary and a BSc degree in Computer Science from the University of Debrecen, Hungary. Currently, I work as a data analyst at TBC and data analytics mentor at TalentLabs. In my free time, I enjoy playing snooker and practicing my guitar skills.</p>
           </div>
         </div>
         <div className="center">
@@ -93,19 +93,18 @@ function App() {
       <li><span>Name:</span> Giorgi Didberidze</li>
       <li><span>Email:</span> gigididberidze01@gmail.com</li>
       <li><span>Phone:</span> +36-70-319-3039</li>
-      <li><span>Location:</span> Budapest, Hungary</li>
+      <li><span>Location:</span> Tbilisi, Georgia</li>
     </ul>
   </div>
   <div className="skills">
     <h3>Skills</h3>
     <ul>
-      <li>Web Development</li>
-      <li>Data Analytics</li>
-      <li>Database Systems (SQL/NoSQL)</li>
-      <li>Automation Engineering</li>
       <li>Data Science and Machine Learning</li>
+      <li>Database Systems</li>
+      <li>Data Analytics</li>
+      <li>Automation Engineering</li>
       <li>Natural Language Processing</li>
-      <li>Networking (CCNA)</li>
+      <li>Web Development</li>
     </ul>
   </div>
   </div>
@@ -124,14 +123,14 @@ function App() {
         className="vertical-timeline-element--work"
         contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-        date="10/2022 - Present"
+        date="10/2024 - Present"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         icon={<FaBriefcase />}
         >
-        <h3 className="vertical-timeline-element-title">Co-Founder and Website Developer</h3>
-        <h4 className="vertical-timeline-element-subtitle">Bliss Travel Georgia</h4>
+        <h3 className="vertical-timeline-element-title">Data Analyst</h3>
+        <h4 className="vertical-timeline-element-subtitle">TBC</h4>
         <p>
-          Created <a id="bliss" href="https://blisstravelgeorgia.com/" target="_blank" rel="noreferrer">www.blisstravelgeorgia.com</a> website. Currently, I am working on SEO improvement and business communications.
+          Working on data analytics pipelines using SQL, PowerBI, Python and more.
         </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -153,6 +152,50 @@ function App() {
         className="vertical-timeline-element--work"
         contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        date="01/2024 - 10/2024"
+        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        icon={<FaBriefcase />}
+        >
+        <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+        <h4 className="vertical-timeline-element-subtitle">KX</h4>
+
+        <p>
+        Worked with KDB+ databases using the q/kdb+ programming language, and also added/modified features in HTML5 dashboards.  
+        </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        date="01/2024 - 10/2024"
+        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        icon={<FaBriefcase />}
+        >
+        <h3 className="vertical-timeline-element-title">Research Assistant</h3>
+        <h4 className="vertical-timeline-element-subtitle">ELTE RiskLab</h4>
+
+        <p>
+        Worked on crypto market volatility analysis, creating websocket connections, reconstructing the order book, and saving the data to KDB+ and PostgreSQL databases. Using different metrics for analysis, such as Hayashi-Yoshida cross-correlation estimation, mid-price estimation, cointegration, leadlag and so on.  
+        </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        date="06/2022 - 09/22"
+        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        icon={<FaBriefcase />}
+        >
+        <h3 className="vertical-timeline-element-title">WBS</h3>
+        <h4 className="vertical-timeline-element-subtitle">NLP Researcher</h4>
+        <p>
+        Conducted AI research in Natural Language Processing about open text generation and Q&A models.
+        </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
         date="07/2021 - 11/2022"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         icon={<FaBriefcase />}
@@ -167,20 +210,6 @@ function App() {
         className="vertical-timeline-element--work"
         contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-        date="06/2022 - 09/22"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        icon={<FaBriefcase />}
-        >
-        <h3 className="vertical-timeline-element-title">WBS</h3>
-        <h4 className="vertical-timeline-element-subtitle">NLP Researcher</h4>
-        <p>
-        Conducting AI research in Natural Language Processing about open text generation and Q&A models.
-        </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
         date="06/2021 - 03/2022"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         icon={<FaBriefcase />}
@@ -189,7 +218,7 @@ function App() {
         <h4 className="vertical-timeline-element-subtitle">TalentLabs</h4>
 
         <p>
-        Teaching Introduction to Python course (Theoretical and Practical parts)
+        Taught Introduction to Python course (Theoretical and Practical parts)
         </p>
         </VerticalTimelineElement>
         </VerticalTimeline>
@@ -201,7 +230,7 @@ function App() {
         className="vertical-timeline-element--work"
         contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-        date="09/2022 - Present"
+        date="09/2022 - 07/2024"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         icon={<FaGraduationCap />}
         >
@@ -210,6 +239,7 @@ function App() {
 
         <p>
         Data Science Specialization<br></br>
+        Thesis: The effect of volatility on the dynamic dependency structure of crypto assets<br></br>
         Full Scholarship Holder – Stipendium Hungaricum 2022/2023
         </p>
         </VerticalTimelineElement>

@@ -32,11 +32,6 @@ const Services = () => {
       <div className="services-slider">
         <Slider {...settings}>
           <div className="service">
-            <FaDesktop className="service-icon" />
-            <h3>Full Stack Development</h3>
-            <p>I offer full-stack development services for web and mobile apps. With expertise in front-end and back-end development and latest technologies, I create responsive and scalable end-to-end solutions.</p>
-          </div>
-          <div className="service">
             <FaChartBar className="service-icon" />
             <h3>Data Analysis / Engineering</h3>
             <p>I offer Data Analysis/Engineering services to help individuals and businesses extract insights from their data. Whether you need to clean, transform, analyze, or visualize your data, I can help you make better decisions and gain a competitive edge. </p>
@@ -50,6 +45,11 @@ const Services = () => {
             <FaBrain className="service-icon" />
             <h3>NLP and AI<br></br>Solutions</h3>
             <p>My AI/NLP services leverage natural language processing and artificial intelligence tech to extract insights and automate processes for businesses. I build custom chatbots, perform sentiment analysis, extract key info from data and more.</p>
+          </div>
+          <div className="service">
+            <FaDesktop className="service-icon" />
+            <h3>Full Stack Development</h3>
+            <p>I offer full-stack development services for web and mobile apps. With expertise in front-end and back-end development and latest technologies, I create responsive and scalable end-to-end solutions.</p>
           </div>
         </Slider>
       </div>
