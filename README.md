@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deployment
+
+This site is automatically deployed to GitHub Pages when changes are pushed to the master branch. The deployment is handled by GitHub Actions workflow in `.github/workflows/deploy.yml`.
+
+To manually deploy:
+1. Run `npm run build` to create a production build
+2. The GitHub Actions workflow will automatically deploy the build to GitHub Pages
+
 ## Available Scripts
 
 In the project directory, you can run:
