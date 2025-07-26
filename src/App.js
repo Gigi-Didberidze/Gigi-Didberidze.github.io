@@ -141,11 +141,15 @@ function App() {
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         icon={<FaBriefcase />}
         >
-        <h3 className="vertical-timeline-element-title">Data Analytics Mentor</h3>
+        <h3 className="vertical-timeline-element-title">Mentor in Machine Learning and Data Analytics in Python</h3>
         <h4 className="vertical-timeline-element-subtitle">TalentLabs</h4>
 
         <p>
-        Modules I am currently guiding: Introduction to Data Analytics, Statistics for Data Analysts, Data Analytics with Python, Hands-on Data Analytics Project, Predictive Analytics Essentials, ETL and Data Warehouse
+        Modules I am currently guiding: <br></br>
+        Machine Learning:<br></br>
+        Python, Statistics, Supervised and Unsupervised Learning, Recommender Systems, FPM, Deep Learning, RAG<br></br>
+        Data Analytics:<br></br>
+        Introduction to Data Analytics, Statistics for Data Analysts, Data Analytics with Python, Hands-on Data Analytics Project, Predictive Analytics Essentials, ETL and Data Warehouse
         </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -186,8 +190,8 @@ function App() {
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         icon={<FaBriefcase />}
         >
-        <h3 className="vertical-timeline-element-title">WBS</h3>
-        <h4 className="vertical-timeline-element-subtitle">NLP Researcher</h4>
+        <h3 className="vertical-timeline-element-title">NLP Researcher</h3>
+        <h4 className="vertical-timeline-element-subtitle">WBS</h4>
         <p>
         Conducted AI research in Natural Language Processing about open text generation and Q&A models.
         </p>
@@ -200,7 +204,7 @@ function App() {
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         icon={<FaBriefcase />}
         >
-        <h3 className="vertical-timeline-element-title">Student Software Developer</h3>
+        <h3 className="vertical-timeline-element-title">Software Developer</h3>
         <h4 className="vertical-timeline-element-subtitle">Ericsson</h4>
         <p>
         Name of department: BDGS RDPS AT Technology & Innovation Tasks: 5G UPF, Compilation of PCG/PCC, Data Analytics (UT/FT), Application performance analysis/improvement,Testing Automation, RISC-V ISA inspection, Working with time-series databases (InfluxDB). Languages used: Python, C, C++
