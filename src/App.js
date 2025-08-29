@@ -118,7 +118,27 @@ function App() {
       </section>
       <section id = "experience" className="experience">
         <h2>Experience</h2>
+        
         <VerticalTimeline lineColor="#333">
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        date="08/2025 - Present"
+        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        icon={<FaBriefcase />}
+        >
+        <h3 className="vertical-timeline-element-title">Founder</h3>
+        <h4 className="vertical-timeline-element-subtitle">Tbilisi Data Science</h4>
+
+        <p>
+        Organizing Meetup Events. Networking with like-minded individuals.
+        </p>
+        </VerticalTimelineElement>
+        
+        
+        
+        {/* <VerticalTimeline lineColor="#333"> */}
         <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
